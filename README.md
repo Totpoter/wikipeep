@@ -89,7 +89,7 @@ git push
 
 Först går vi igenom designer och tekniska förlag.
 
-Sedan när vi har fått en grund för designen installerar vi alla [filer](#Fil systemet) osv
+Sedan när vi har fått en grund för designen installerar vi alla [filer](#fil-systemet) osv
 
 Efter det så kommer "screen" göra alla grund läggande sakerna i bootstrap och css (i scss fil)
 
