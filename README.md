@@ -1,9 +1,9 @@
 # wikipeep
 WikiPeep is a learning technology platform based in Gothenburg, Sweden.
 
-## Språk, frameworks, packet
+## Språk, frameworks, paket
 
-Vi kommer använda packet / frameworks i nästan alla språken vi använder. HTML kommer inte använda Backbone, Jade eller någonting liknande utan kommer bara var vanlig HTML kod. Vår CSS kommer vara skriven i sass och direkt installerad och komprimerad med Ruby (gems). Med Sass kommer vi översens om Compass, Bourbon eller Bootstrap är bästa alternativet. Till JavaScript kommer vi använda jQuery och eventuellt Angular. När det gäller server språket så kommer vi använda PHP, antagligen utan frameworks men vi kanske använder Slim / Laravel. Backend systemet kommer vara drivet av MySQL och drivas med PHPMyAdmin. Alla encryptioner kommer vara med bcrypt. APIn kommer vara i JSON. 
+Vi kommer använda paket / frameworks i nästan alla språken vi använder. HTML kommer inte använda Backbone, Jade eller någonting liknande utan kommer bara var vanlig HTML kod. Vår CSS kommer vara skriven i sass och direkt installerad och komprimerad med Ruby (gems). Med Sass kommer vi översens om Compass, Bourbon eller Bootstrap är bästa alternativet. Till JavaScript kommer vi använda jQuery och eventuellt Angular. När det gäller server språket så kommer vi använda PHP, antagligen utan frameworks men vi kanske använder Slim / Laravel. Backend systemet kommer vara drivet av MySQL och drivas med PHPMyAdmin. Alla encryptioner kommer vara med bcrypt. APIn kommer vara i JSON. 
 
 ### Förutsättningar
 
