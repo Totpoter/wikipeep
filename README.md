@@ -87,22 +87,25 @@ git push
 
 ### Arbets ordning
 
-Först går vi igenom designer och tekniska förlag.
+Simpel markup med menyn och startsidan.
 
-Sedan när vi har fått en grund för designen installerar vi alla [filer](#fil-systemet) osv
+Simpel CSS / SASS (i en scss eller sass fil)
 
-Efter det så kommer "screen" göra alla grund läggande sakerna i bootstrap och css (i scss fil)
+Sortera kategorierna i navigationen
 
-Under tiden så kommer totpoter och nilsgarland fixa PHP filen och starta OOPn.
+Artikel sidorna med pagination (GET metoden)
 
-Efter det kommer "screen" bygga mer html med bootstrap
+Artikel design i sass
 
-Under tiden kommer nilsgarland ändra all css som Isak gjorde till fin Sass och kanske lära lite Sass till "screen" på vägen
+Lite mer detaljer på artikel sidorna
 
-Under tiden som totpoter Börjar med login scriptet i oop filen.
+Ett log in system, som egentligen endast är till för forumet. Så den bör anpassas efter det.
 
-Efter det har ingen planering blivit satt än eftersom nu har vi ett generelt bra "workflow"
+Börja ett forum på varje atrikel. Så man kan fråga en fråga om en artikel och sedan kommer alla frågor på forums sidan.
 
+Göra alla artiklarna (TRÅKIGA DELEN)
+
+Om vi kommer på ideer på vägen så kan vi ta det då (:
 
 ## Contributing
 
