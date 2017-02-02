@@ -119,4 +119,4 @@ See also the list of [contributors](https://github.com/wikipeep/wikipeep/contrib
 
 ## License
 
-This project is licensed under the AWP License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the AWP License - see the [LICENSE](LICENSE) file for details.
