@@ -22,9 +22,11 @@ Composer (kanske)
 
 ### Upplägg
 
-nilsgarland: PHP / MySQL, Sass, Bootstrap, jQuery
+nilsgarland: PHP / MySQL (Pagination, forum), Sass, Bootstrap, jQuery
+
 En: Bootstrap, CSS
-totpoter: PHP, Bootstrap, lite Sass, lite jQuery
+
+totpoter: PHP / MySQL (Användar hantering), Bootstrap, lite Sass, lite jQuery
 
 # Hur kommer allt utföras?
 
