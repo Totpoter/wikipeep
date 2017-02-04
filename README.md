@@ -15,16 +15,18 @@ Ruby
 
 Sass
 
+Slim
+
 Git
 
-Composer (kanske)
+Composer
 
 
 ### Upplägg
 
-nilsgarland: PHP / MySQL (Pagination, forum), Sass, Bootstrap, jQuery
+nilsgarland: PHP / MySQL (Pagination, forum), Slim, Sass / Scss, Bootstrap, jQuery
 
-En: Bootstrap, CSS
+En: Bootstrap, CSS / Sass
 
 totpoter: PHP / MySQL (Användar hantering), Bootstrap, lite Sass, lite jQuery
 
