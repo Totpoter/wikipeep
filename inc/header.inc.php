@@ -1,5 +1,5 @@
 <?php
-  echo "Start";
+  echo "Header included";
 ?>
 <!DOCTYPE html>
 <html>
