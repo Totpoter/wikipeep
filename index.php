@@ -4,24 +4,20 @@ require 'vendor/autoload.php';
 
 $app = new \Slim\Slim();
 
-$app->get('/hello/:name', function ($name) {
-  echo "Hello, $name";
-});
-
-$app->get('/', function () {
-  echo "Start sidan";
+$app->get('/', function () use($app) {
+  $app->render('index.php');
 });
 
 $app->get('/bibliotek', function () {
-  echo "Biblioteket";
+  $app->render('library.php');
 });
 
 $app->get('/forum', function () {
-  echo "Forumet";
+  $app->render('forum.php');
 });
 
 $app->get('/kurser', function () {
-  echo "Kurser";
+  $app->render('courses.php');
 });
 
 $app->run();
