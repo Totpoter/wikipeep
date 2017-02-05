@@ -16,6 +16,10 @@ $app = new \Slim\Slim();
   })->name('bibliotek');
 
 
+  $app->get('/nyheter', function () use($app) {
+    $app->render('news.php');
+  })->name('nyheter');
+
   /*$app->get('/artikel/:artikel', function ($artikel) use($app) {
     $app->render('article.php', array('article' => $artikel));
   })->name('artikel');*/
