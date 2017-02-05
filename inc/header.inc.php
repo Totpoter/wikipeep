@@ -1,4 +1,5 @@
 <?php
+  include "handler.inc.php";
   echo "Header included";
 ?>
 <!DOCTYPE html>

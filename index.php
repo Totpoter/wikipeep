@@ -16,6 +16,10 @@ $app = new \Slim\Slim();
   })->name('bibliotek');
 
 
+  $app->get('/artikel/:artikel', function ($artikel) use($app) {
+    $app->render('article.php', array('article' => $artikel));
+  })->name('artikel');
+
 
   $app->get('/forum', function () use($app) {
     $app->render('forum.php');
@@ -67,19 +71,7 @@ $app = new \Slim\Slim();
     $password = $app->request->post('password');
     $repassword = $app->request->post('repassword');
 
-    // Hej Niklas, skriv vanliga login koden som du kan
-    // Men använd bara variablarna åvanför istället.
-    // För lite bättre error handling vilket ska vara en av
-    // Våra högsta proriteter. Så kan du kolla in PHP's
-    // filter_vars med denna länken
-    // http://php.net/manual/en/filter.filters.sanitize.php
-
-    // När du vill skicka tillbaka dem till sidan efter prosessen här
-    // Skriv då: $app->redirect('/sidan');
-
-    // Du kan lägga till ett medelande också
-    // För att göra det lägg till det så här
-    // Skriv då: $app->redirect('/sidan?m=success'); t.ex
+    // Samma gäller här som jag skrev där uppe.
 
   });
 
