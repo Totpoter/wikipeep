@@ -20,10 +20,6 @@ $app = new \Slim\Slim();
     $app->render('news.php');
   })->name('nyheter');
 
-  /*$app->get('/artikel/:artikel', function ($artikel) use($app) {
-    $app->render('article.php', array('article' => $artikel));
-  })->name('artikel');*/
-
   $app->get('/artikel', function () use($app) {
     $app->render('article.php');
   })->name('artikel');
