@@ -44,6 +44,14 @@ $app = new \Slim\Slim();
     // filter_vars med denna länken
     // http://php.net/manual/en/filter.filters.sanitize.php
 
+    // När du vill skicka tillbaka dem till sidan efter prosessen här
+    // Skriv då: $app->redirect('/sidan');
+
+    // Du kan lägga till ett medelande också
+    // För att göra det lägg till det så här
+    // Skriv då: $app->redirect('/sidan?m=success'); t.ex
+
+
   });
 
 
@@ -65,6 +73,13 @@ $app = new \Slim\Slim();
     // Våra högsta proriteter. Så kan du kolla in PHP's
     // filter_vars med denna länken
     // http://php.net/manual/en/filter.filters.sanitize.php
+
+    // När du vill skicka tillbaka dem till sidan efter prosessen här
+    // Skriv då: $app->redirect('/sidan');
+
+    // Du kan lägga till ett medelande också
+    // För att göra det lägg till det så här
+    // Skriv då: $app->redirect('/sidan?m=success'); t.ex
 
   });
 
