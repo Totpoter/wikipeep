@@ -1,7 +1,7 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'root', 'root', 'buybase');
+$conn = mysqli_connect('localhost', 'root', '', 'wikipeep');
 
 if (!$conn) {
-  echo "Connection failed";
+  alert ("nah didn't work bruv."); #'Nah, didnt work bruv.';
 }

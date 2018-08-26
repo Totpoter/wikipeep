@@ -15,20 +15,16 @@ Ruby
 
 Sass
 
-Slim
-
 Git
 
-Composer
+Composer (kanske)
 
 
 ### Upplägg
 
-nilsgarland: PHP / MySQL (Pagination, forum), Slim, Sass / Scss, Bootstrap, jQuery
-
-En: Bootstrap, CSS / Sass
-
-totpoter: PHP / MySQL (Användar hantering), Bootstrap, lite Sass, lite jQuery
+nilsgarland: PHP / MySQL, Sass, Bootstrap, jQuery
+En: Bootstrap, CSS
+totpoter: PHP, Bootstrap, lite Sass, lite jQuery
 
 # Hur kommer allt utföras?
 
@@ -123,4 +119,4 @@ See also the list of [contributors](https://github.com/wikipeep/wikipeep/contrib
 
 ## License
 
-This project is licensed under the AWP License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the AWP License - see the [LICENSE](LICENSE) file for details

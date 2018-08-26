@@ -1,82 +1,27 @@
-<?php
-
-require 'vendor/autoload.php';
-
-$app = new \Slim\Slim();
-
-
-  $app->get('/', function () use($app) {
-    $app->render('index.php');
-  })->name('hem');
+<?php include 'inc/header.inc.php'; ?>
 
 
 
-  $app->get('/bibliotek', function () use($app) {
-    $app->render('library.php');
-  })->name('bibliotek');
 
-
-  $app->get('/nyheter', function () use($app) {
-    $app->render('news.php');
-  })->name('nyheter');
-
-  $app->get('/artikel', function () use($app) {
-    $app->render('article.php');
-  })->name('artikel');
-
-
-  $app->get('/forum', function () use($app) {
-    $app->render('forum.php');
-  })->name('forum');
+<center>
+<img src="images/logo.png" width="100" height="100" id="index-logo">
+<h1>WikiPeep</h1>
 
 
 
-  $app->get('/kurser', function () use($app) {
-    $app->render('courses.php');
-  })->name('kurser');
+<div class="fullscreen-bg">
+      <video width="100%" height="100%" autoplay>
+        <source src="videos/bg.mp4" type="video/mp4">Your browser sucks.
+      </video>
+</div>
+<div class="row">
+  <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+      <p class="general-info">WikiPeep är en wiki, ett forum och en studieresurs utvecklad för högstadie-elever. <br> På sidan kan man hitta artiklar som tar upp ånga olika ämnen, alla indelade i olika kurser. <br>Man kan hitta alla artiklar och kurser i vårt Bibliotek. <br> <br> Ifall man har några frågor kan man använda vårt forum, där både lärare och andra elever kan hjälpa dig genom att svara. Börja lära dig idag, skapa ett konto här. </p>
+    </div>
+  <div class="col-lg-4"></div>
+</div>
+</center>
 
 
-
-  $app->get('/login', function () use($app) {
-    $app->render('login.php');
-  })->name('login');
-
-  $app->post('/login', function () use($app) {
-    $email = $app->request->post('email');
-    $password = $app->request->post('password');
-
-    // Hej Niklas, skriv vanliga login koden som du kan
-    // Men använd bara variablarna åvanför istället.
-    // För lite bättre error handling vilket ska vara en av
-    // Våra högsta proriteter. Så kan du kolla in PHP's
-    // filter_vars med denna länken
-    // http://php.net/manual/en/filter.filters.sanitize.php
-
-    // När du vill skicka tillbaka dem till sidan efter prosessen här
-    // Skriv då: $app->redirect('/sidan');
-
-    // Du kan lägga till ett medelande också
-    // För att göra det lägg till det så här
-    // Skriv då: $app->redirect('/sidan?m=success'); t.ex
-
-
-  });
-
-
-
-  $app->get('/register', function () use($app) {
-    $app->render('register.php');
-  })->name('register');
-
-  $app->post('/register', function () use($app) {
-    $fname = $app->request->post('fname');
-    $uname = $app->request->post('uname');
-    $email = $app->request->post('email');
-    $password = $app->request->post('password');
-    $repassword = $app->request->post('repassword');
-
-    // Samma gäller här som jag skrev där uppe.
-
-  });
-
-$app->run();
+<?php include 'inc/footer.inc.php'; ?>
