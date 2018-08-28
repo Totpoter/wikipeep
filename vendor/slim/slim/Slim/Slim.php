@@ -3,10 +3,10 @@
  * Slim - a micro PHP 5 framework
  *
  * @author      Josh Lockhart <info@slimframework.com>
- * @copyright   2011 Josh Lockhart
+ * @copyright   2011-2017 Josh Lockhart
  * @link        http://www.slimframework.com
  * @license     http://www.slimframework.com/license
- * @version     2.4.2
+ * @version     2.6.3
  * @package     Slim
  *
  * MIT LICENSE
@@ -33,10 +33,8 @@
 namespace Slim;
 
 // Ensure mcrypt constants are defined even if mcrypt extension is not loaded
-if (!extension_loaded('mcrypt')) {
-    define('MCRYPT_MODE_CBC', 0);
-    define('MCRYPT_RIJNDAEL_256', 0);
-}
+if (!defined('MCRYPT_MODE_CBC')) define('MCRYPT_MODE_CBC', 0);
+if (!defined('MCRYPT_RIJNDAEL_256')) define('MCRYPT_RIJNDAEL_256', 0);
 
 /**
  * Slim
@@ -54,7 +52,7 @@ class Slim
     /**
      * @const string
      */
-    const VERSION = '2.4.2';
+    const VERSION = '2.6.3';
 
     /**
      * @var \Slim\Helper\Set
@@ -1104,12 +1102,12 @@ class Slim
         $this->response->redirect($url, $status);
         $this->halt($status);
     }
-    
+
     /**
      * RedirectTo
-     * 
+     *
      * Redirects to a specific named route
-     * 
+     *
      * @param string    $route      The route name
      * @param array     $params     Associative array of URL parameters and replacement values
      */
@@ -1372,6 +1370,7 @@ class Slim
             $this->response()->write(ob_get_clean());
         } catch (\Exception $e) {
             if ($this->config('debug')) {
+                ob_end_clean();
                 throw $e;
             } else {
                 try {

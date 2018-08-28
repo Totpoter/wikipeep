@@ -3,10 +3,10 @@
  * Slim - a micro PHP 5 framework
  *
  * @author      Josh Lockhart <info@slimframework.com>
- * @copyright   2011 Josh Lockhart
+ * @copyright   2011-2017 Josh Lockhart
  * @link        http://www.slimframework.com
  * @license     http://www.slimframework.com/license
- * @version     2.4.2
+ * @version     2.6.3
  * @package     Slim
  *
  * MIT LICENSE
@@ -310,8 +310,8 @@ class Log
                 $message = print_r($object, true);
             } else {
                 $message = (string) $object;
-            }   
-            
+            }
+
             if (count($context) > 0) {
                 if (isset($context['exception']) && $context['exception'] instanceof \Exception) {
                     $message .= ' - ' . $context['exception'];
