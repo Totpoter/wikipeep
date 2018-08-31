@@ -1,7 +1,7 @@
 <?php
   include 'inc/header.inc.php';
 
-  $q = $_GET['q'];
+
 
 ?>
 
@@ -17,6 +17,7 @@
   <hr>
   <?php
     if (!isset($_GET['q'])) {
+
   ?>
 
   <h3>Kurser</h3>
@@ -80,6 +81,7 @@
       ';
     }
   } else {
+    $q = $_GET['q'];
     $sql = "SELECT * FROM articles WHERE title LIKE '%$q%'";
     $result = mysqli_query($conn, $sql);
 
