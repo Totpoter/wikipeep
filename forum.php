@@ -12,7 +12,7 @@
          <tr>
             <th>Titel</th>
             <th>Artikel</th>
-            <th>Categori</th>
+            <th>Kategori</th>
             <th>Fråga Av</th>
          </tr>
          <?php

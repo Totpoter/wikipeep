@@ -47,7 +47,7 @@
            <input type="hidden" name="answerUser" value="<?php echo $_SESSION['first']; ?>">
            <input type="hidden" name="postId" value="<?php echo $id; ?>">
            <textarea name="answer" rows="4" style="resize:none;outline:none;width:100%;padding:10px;border:1px #e9e9e9 solid;" placeholder="Kan du svara på den här frågan? Skriv ditt svar här."></textarea>
-           <button class="btn btn-primary" style="width: 100%;" value="submit">Sicka Svara</button>
+           <button class="btn btn-primary" style="width: 100%;" value="submit">Sicka Svar</button>
        </form>
      </div>
      <div class="col-md-4">
