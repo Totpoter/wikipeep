@@ -1,5 +1,12 @@
-<?php include 'inc/header.inc.php' ?>
+<?php require 'inc/header.inc.php' ?>
 <?php
+$url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+if (strpos($url, 'error=empty') !== false) {
+    echo "<h3 style='text-align: center; '>You left empty fields</h3>";
+}
+elseif (strpos($url, 'error=wrong') !== false) {
+  echo "<h3 style='text-align: center; '>Wrong username or password</h3>";
+}
 if(isset($_SESSION['id'])) {
   echo "<div class='container'><form action='inc/logout.inc.php'>
         <button>Log Out</button>

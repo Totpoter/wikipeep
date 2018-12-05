@@ -1,13 +1,12 @@
 <?php
 session_start();
-include 'handler.inc.php';
+require 'handler.inc.php';
 
 $first = $_POST['first'];
 $last = $_POST['last'];
 $email = $_POST['email'];
 $uid = $_POST['uid'];
 $pwd = $_POST['pwd'];
-
 if (empty($first)) {
   header('Location: ../signup.php?error=empty');
   exit();
@@ -35,8 +34,8 @@ $result = mysqli_query($conn, $sql);
 #  header('Location: ../signup.php?error=username');
 #  exit();
 #} else {
-  $encrypt = password_hash($pwd, PASSWORD_DEFAULT);
-  $sql = "INSERT INTO users (first, last, email, uid, pwd) VALUES ('$first', '$last', '$email', '$uid', '$encrypt')";
+//  $encrypt = password_hash($pwd, PASSWORD_DEFAULT);
+  $sql = "INSERT INTO users (first, last, email, uid, pwd) VALUES ('$first', '$last', '$email', '$uid', '$pwd')";
   $result = mysqli_query($conn, $sql);
 
   header('Location: ../index.php');

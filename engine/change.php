@@ -2,7 +2,7 @@
 
 session_start();
 
-include '../inc/handler.inc.php';
+require '../inc/handler.inc.php';
 
 $user = $_SESSION['id'];
 $password = $_POST['password'];

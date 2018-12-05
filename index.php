@@ -1,4 +1,4 @@
-<?php include 'inc/header.inc.php'; ?>
+<?php require 'inc/header.inc.php'; ?>
 
 
 

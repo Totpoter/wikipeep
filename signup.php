@@ -1,5 +1,5 @@
 <?php
-  include 'inc/header.inc.php';
+  require 'inc/header.inc.php';
  ?>
 
 
@@ -7,7 +7,7 @@
 
   $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
   if (strpos($url, 'error=empty') !== false) {
-    echo "You left empty fields.";
+      echo "<h3 style='text-align: center; '>You left empty fields.</h1>";
   }
   elseif (strpos($url, 'error=username') !== false) {
     echo "The username is already taken!";

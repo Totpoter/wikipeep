@@ -1,5 +1,5 @@
 <?php
-  include 'inc/header.inc.php';
+  require 'inc/header.inc.php';
 
   if (!isset($_GET['question_id'])) {
     header("Location: forum.php");

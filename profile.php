@@ -1,7 +1,11 @@
 <?php
-include 'inc/header.inc.php';
+require 'inc/header.inc.php';
 
-$u = $_GET['u'];
+if(isset($_GET['u'])){
+  $u = $_GET['u'];
+}else{
+  $u = $_SESSION['id'];
+}
 
 $sql = "SELECT * FROM users WHERE id='$u'";
 $result = mysqli_query($conn, $sql);
@@ -33,7 +37,9 @@ $user = mysqli_fetch_assoc($result);
     </tr>
   </table>
 </div>
-
+<form class="" action="change_theme.php" method="post">
+<center><input type="submit" value="Ändra tema" action="change_theme.php"></center>
+</form>
 <div class="modal fade" id="leModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">

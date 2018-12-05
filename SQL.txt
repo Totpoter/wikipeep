@@ -6,6 +6,5 @@ CREATE table users (
     last varchar(20) NOT NULL,
     email varchar(128) NOT NULL,
     uid varchar(20) NOT NULL,
-    pwd varchar(1000) NOt NULL
+    pwd varchar(1000) NOT NULL
 );
-

@@ -16,8 +16,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script src="js/ads.js"></script>
-<link rel="stylesheet" type="text/css" href="css/main.css">
-	<title></title>
+<?php if(isset($_SESSION["default_theme"]) && $_SESSION["default_theme"] === true) {
+	?> <link rel="stylesheet" type="text/css" href="css/default_theme.css"> <?php
+} else { ?>
+	<link rel="stylesheet" type="text/css" href="css/light_theme.css"> <?php
+} ?>
 </head>
 <body>
 

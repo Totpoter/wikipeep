@@ -1,6 +1,6 @@
 <?php
 
-include "../inc/handler.inc.php";
+require "../inc/handler.inc.php";
 
 $title = $_POST['title'];
 $question = $_POST['question'];

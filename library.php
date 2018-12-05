@@ -1,5 +1,5 @@
 <?php
-  include 'inc/header.inc.php';
+  require 'inc/header.inc.php';
 
 
 
