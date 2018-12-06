@@ -31,6 +31,8 @@
             while ($question = mysqli_fetch_assoc($result)) {
                 echo "<tr><td><a href='forum_page.php?article_id=".$question['articleId']."&question_title=".$question['title']."&question=".$question['question']."&question_id=".$question['id']."' style='color:#000;font-weight:bold;'>".$question['title']."</a></td><td><a href='article.php?a=".$question['articleId']."' style='color:#000;'>".$question['article']."</a></td><td>".$question['category']."</td><td>".$question['asker']."</td></tr>";
             }
+          } else {
+            header('Location: forum.php?order=title');
           }
          ?>
        </table>

@@ -38,7 +38,7 @@ $user = mysqli_fetch_assoc($result);
   </table>
 </div>
 <form class="" action="change_theme.php" method="post">
-<center><input type="submit" value="Ändra tema" action="change_theme.php"></center>
+<center><button class="btn btn-primary themebutton" type="submit" value="Ändra tema" action="change_theme.php">Ändra tema</button></center>
 </form>
 <div class="modal fade" id="leModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">

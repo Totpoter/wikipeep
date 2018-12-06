@@ -2,6 +2,23 @@
 	include "handler.inc.php";
 
 	session_start();
+
+
+	if(isset($_COOKIE["THEME-COOKIE"])) {
+	    if($_COOKIE["THEME-COOKIE"]  == "default_theme"){
+					$_SESSION["default_theme"] = true;
+					$_SESSION["light_theme"] = false;
+					    }
+	    else{
+				$_SESSION["default_theme"] = false;
+				$_SESSION["light_theme"] = true;
+	    }
+	} else {
+		$_SESSION["default_theme"] = true;
+		$_SESSION["light_theme"] = false;
+	}
+
+
 ?>
 <!DOCTYPE html>
 <html>

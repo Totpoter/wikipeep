@@ -1,9 +1,17 @@
 <?php
-session_start();
-if($_SESSION['default_theme'] === true) {
-  $_SESSION['default_theme'] = false;
-}else {
-  $_SESSION['default_theme'] = true;
+
+
+
+
+if(isset($_COOKIE["THEME-COOKIE"])) {
+    if($_COOKIE["THEME-COOKIE"]  == "default_theme"){
+      setcookie("THEME-COOKIE", "lighttheme", time() + (86400 * 30), "/");
+    }
+    else{
+      setcookie("THEME-COOKIE", "default_theme", time() + (86400 * 30), "/");
+    }
+} else {
+  setcookie("THEME-COOKIE", "default_theme", time() + (86400 * 30), "/");
 }
+
 header('Location: profile.php');
-exit();

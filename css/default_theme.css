@@ -1,8 +1,8 @@
 body {
   background-color: darkgrey;
   overflow-x: hidden;
-  max-width: 100%; }
-
+  max-width: 100%;
+}
 .fullscreen-bg {
   position: fixed;
   top: 0;
@@ -10,51 +10,56 @@ body {
   bottom: 0;
   left: 0;
   overflow: hidden;
-  z-index: -100; }
-
+  z-index: -100;
+}
 .fullscreen-bg__video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
-
+  height: 100%;
+}
 .article_q input {
   width: 100%;
   border: 0.5px #e7e7e7 solid;
   outline: none;
-  padding: 5px; }
+  padding: 5px;
+}
 .article_q textarea {
   width: 100%;
   border: 0.5px #e7e7e7 solid;
   outline: none;
   padding: 5px;
-  resize: none; }
+  resize: none;
+}
 .article_q button {
-  width: 100%; }
-
+  width: 100%;
+}
 #index-logo {
-  margin: 10px 0px; }
-
+  margin: 10px 0px;
+}
 .navbar .navbar-brand {
-  color: #fff; }
+  color: #fff;
+}
   .navbar .navbar-brand:hover {
-    color: lightgray; }
+    color: lightgray;
+  }
 .navbar .navbar-nav .nav-link {
-  color: #fff; }
-  .navbar .navbar-nav .nav-link:hover {
-    color: lightgray; }
-
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: lightgray;
+}
 .general-info {
-  color: #fff; }
-
+  color: #fff;
+}
 .phpform {
   max-width: 300px;
   margin: 10px auto;
   padding: 10px 20px;
   background: #f4f7f8;
-  border-radius: 8px; }
-
+  border-radius: 8px;
+}
 .phpform input[type="text"],
 input[type="password"],
 input[type="email"] {
@@ -69,8 +74,8 @@ input[type="email"] {
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-  margin-bottom: 30px; }
-
+  margin-bottom: 30px;
+}
 .phpbutton {
   padding: 19px 39px 18px 39px;
   color: #FFF;
@@ -81,16 +86,16 @@ input[type="email"] {
   border-radius: 5px;
   width: 100%;
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-  margin-bottom: 10px; }
-
+  margin-bottom: 10px;
+}
 legend {
   font-size: 1.4em;
-  margin-bottom: 10px; }
-
+  margin-bottom: 10px;
+}
 label {
   display: block;
-  margin-bottom: 8px; }
-
+  margin-bottom: 8px;
+}
 .number {
   background-color: #D3D3D3;
   color: #fff;
@@ -102,13 +107,17 @@ label {
   line-height: 30px;
   text-align: center;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-  border-radius: 100%; }
+  border-radius: 100%;
+}
 th, td {
   border-color: black !important;
 }
 .order {
   background-color: transparent;
   border: 0;
+}
+.themebutton {
+  cursor: pointer;
 }
 @media screen and (min-width: 480px) {
   .phpform {
