@@ -4,6 +4,7 @@ CREATE TABLE forum (
   question TEXT not null,
   article varchar(128) not null,
   articleId varchar(128) not null,
+  category varchar(128) not null,
   asker varchar(128) not null,
   askerId varchar(128) not null
 );
